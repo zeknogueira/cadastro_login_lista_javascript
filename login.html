@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login LDP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Atividade Prática JavaScript 4º Bimestre - LDP</h1>
+        <h2>Atividade de Login</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="about.html">SObre</a>
+        </nav>
+    </header>
+    <main>
+        <form onsubmit="return validar_formulario_login()" action="index.html">
+            <label for="valor_email">Email:</label>
+            <input type="text" id="valor_email" size="30" name="txtemail" required placeholder="Digite seu email"><br>
+
+            <label for="valor_senha">Senha:</label>
+            <input type="password" id="valor_senha" size="8" required placeholder="Digite sua senha"><br>
+
+            <button type="submit" name="btncadastra">Login</button>
+        </form>
+
+    </main>
+    <footer>
+        <p>Desenvolvido Por <a href="intagram.com/zeknogueira">Zek Nogueira</a></p>        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

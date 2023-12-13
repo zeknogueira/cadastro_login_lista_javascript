@@ -1,0 +1,17 @@
+#cadastro-registro{
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#lista-registro{ 
+    display: none; 
+}
+
+body[page=lista] #lista-registro{  /* quando page for igual a lista*/
+    display: block;
+}
+
+body[page=cadastro] #cadastro-registro{  /* quando page for igual a cadastro*/
+    display: block;
+}

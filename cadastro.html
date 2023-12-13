@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login LDP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Atividade Prática JavaScript 4º Bimestre - LDP</h1>
+        <h2>Atividade de Login</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="about.html">SObre</a>
+        </nav>
+    </header>
+    <main>
+        <form onsubmit="return validar_formulario_cadastro()" action="login.html">
+            <label for="valor_nome">Nome:</label>
+            <input id="valor_nome" type="text" size="30" name="txtnome" placeholder="Digite seu nome"><br>
+
+            <label for="valor_email">Email:</label>
+            <input type="text" id="valor_email" size="30" name="txtemail" required placeholder="Digite seu email"><br>
+
+            <label for="valor_senha">Senha:</label>
+            <input type="password" id="valor_senha" required placeholder="Digite sua senha"><br>
+
+            <label for="tsenha2">Confirmar Senha:</label>
+            <input type="password" id="valor_confirmar_senha" size="8" required placeholder="Confirme sua senha"><br>
+            <fieldset>
+                <legend>Sexo biológico: </legend>
+                <label style="display: flex;">
+                    Feminino<input type="radio" value=" feminino" name="rdsexo" class="linha">
+                </label>
+                <label style="display: flex;">
+                    Masculino <input type="radio" value="masculino" class="linha" name="rdsexo">
+                </label>
+                <label style="display: flex;">
+                    Não binário <input type="radio" value="n_binario" class="linha" name="rdsexo">
+                </label>
+            </fieldset>
+            <label>Linguagens para Web conhecidas: </label>
+            <label><input type="checkbox" name="chk_language" value="HTML" class="linha">
+                HTML</label>
+            <label><input type="checkbox" name="chk_language" value=" PHP " class="linha">PHP</label>
+            <label><input type="checkbox" name="chk_language" value="JS" class="linha">JavaScript</label>
+            <button type="submit" name="btncadastra">Cadastrar</button>
+        </form>
+    </main>
+    <footer>
+        <p>Desenvolvido Por <a href="intagram.com/zeknogueira">Zek Nogueira</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
